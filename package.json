@@ -1,0 +1,10 @@
+{
+  "name": "statezero-webpage-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix statezero-web",
+    "build": "npm run build --prefix statezero-web",
+    "start": "npm run start --prefix statezero-web",
+    "lint": "npm run lint --prefix statezero-web"
+  }
+}
