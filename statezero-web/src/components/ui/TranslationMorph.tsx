@@ -130,10 +130,12 @@ export default function TranslationMorph({ hovered }: Props) {
         stroke="#22C55E"
         strokeWidth={0.5}
         strokeOpacity={0.6}
-        transformOrigin={`${HEX_CX}px ${HEX_CY}px`}
         initial={{ scale: 0, opacity: 0 }}
         animate={innerCtrl}
-        style={{ transformBox: "fill-box", transformOrigin: "center" }}
+        style={{
+          transformBox: "fill-box",
+          transformOrigin: `${HEX_CX}px ${HEX_CY}px`,
+        }}
       />
 
       {/* Centre molecule dot */}
