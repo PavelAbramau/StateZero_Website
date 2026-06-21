@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --background: #05050A;
+  --foreground: #F4F4FB;
+  --surface: #141425;
+  --surface-alt: #06060F;
+  --muted: #CBD5E1;
+  --muted-dim: #64748B;
+  --border: #334155;
+  --neon-green: #22C55E;
+  --electric-violet: #7C3AED;
+  --violet-soft: #A78BFA;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-muted: var(--muted);
+  --color-muted-dim: var(--muted-dim);
+  --color-border: var(--border);
+  --color-neon-green: var(--neon-green);
+  --color-electric-violet: var(--electric-violet);
+  --color-violet-soft: var(--violet-soft);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@utility border-glow-green {
+  border: 1px solid color-mix(in srgb, var(--neon-green) 55%, transparent);
+  box-shadow:
+    0 0 12px color-mix(in srgb, var(--neon-green) 18%, transparent),
+    inset 0 0 12px color-mix(in srgb, var(--neon-green) 6%, transparent);
+}
+
+@utility border-glow-violet {
+  border: 1px solid color-mix(in srgb, var(--electric-violet) 55%, transparent);
+  box-shadow:
+    0 0 12px color-mix(in srgb, var(--electric-violet) 18%, transparent),
+    inset 0 0 12px color-mix(in srgb, var(--electric-violet) 6%, transparent);
+}
+
+@utility border-glow-neutral {
+  border: 1px solid color-mix(in srgb, var(--border) 90%, var(--electric-violet) 10%);
+  box-shadow:
+    0 0 10px color-mix(in srgb, var(--electric-violet) 8%, transparent),
+    inset 0 0 8px color-mix(in srgb, var(--neon-green) 4%, transparent);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+}
