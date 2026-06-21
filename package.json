@@ -2,11 +2,11 @@
   "name": "statezero-webpage-root",
   "private": true,
   "scripts": {
-    "dev": "npm run dev --prefix statezero-web",
-    "build": "npm run build --prefix statezero-web",
-    "start": "npm run start --prefix statezero-web",
-    "lint": "npm run lint --prefix statezero-web"
-  },
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint"
+}
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^12.40.0",
