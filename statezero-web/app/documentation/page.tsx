@@ -46,14 +46,14 @@ const sections = [
       {
         label: "StateZero / core-engine",
         meta: "Python · Nextflow · Active",
-        href: "https://github.com/PavelAbramau/StateZero",
+        href: "https://github.com/PavelAbramau/StateZero/tree/main/core",
         icon: "⌥",
         external: true,
       },
       {
-        label: "StateZero / tfe-encoder",
+        label: "StateZero / generator",
         meta: "Python · PyTorch · Active",
-        href: "https://github.com/PavelAbramau/StateZero",
+        href: "https://github.com/PavelAbramau/StateZero/tree/main/core/generator",
         icon: "⌥",
         external: true,
       },
@@ -134,7 +134,7 @@ export default function DocumentationPage() {
         {/* Terminal hint */}
         <div className="mt-8 inline-flex items-center gap-3 border border-[#334155] bg-[#06060F] px-4 py-2 rounded-lg font-mono text-xs text-[#22C55E]">
           <span className="text-[#7C3AED]">~ $</span>
-          <span>git clone https://github.com/PavelAbramau/StateZero</span>
+          <span>git clone https://github.com/PavelAbramau/StateZero/tree/main/core</span>
         </div>
       </div>
 

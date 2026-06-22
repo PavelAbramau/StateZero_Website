@@ -82,10 +82,8 @@ export default function TechnologyPage() {
 
               <p className="text-[#8D88B3] text-sm leading-relaxed mb-6">
                 Screens the NIH LINCS Phase I L1000 dataset (
-                <span className="font-mono text-[#22C55E]">GSE92742</span>) —
-                filtered exclusively for{" "}
-                <span className="font-mono text-[#22C55E]">trt_lig</span>{" "}
-                perturbations — to evaluate recombinant ligands, cytokines, and
+                <span className="font-mono text-[#22C55E]">GSE92742</span>)
+                to evaluate recombinant ligands, cytokines, and
                 morphogens. The engine calculates multi-dimensional cell-state
                 transitions using{" "}
                 <span className="font-mono text-[#22C55E]">Cosine Similarity</span>,{" "}
