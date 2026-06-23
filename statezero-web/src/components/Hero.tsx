@@ -11,12 +11,12 @@ export default function Hero() {
         Reprogramming fibrotic tissue through latent-space transcriptomics.
       </p>
 
-      <button
-        type="button"
-        className="mt-12 px-8 py-3 border border-[#7C3AED] bg-transparent text-[#F4F4FB] font-mono text-sm uppercase tracking-widest transition-all duration-200 hover:bg-[#7C3AED] hover:shadow-[0_0_18px_rgba(124,58,237,0.55)] active:scale-95"
+      <a
+        href="mailto:investors@statezerolabs.space?subject=Data%20Room%20Access%20Request&body=Hi%20Pavel,%20I%20would%20like%20to%20request%20access%20to%20the%20StateZero%20investor%20data%20room."
+        className="mt-12 inline-block px-8 py-3 border border-[#7C3AED] bg-transparent text-[#F4F4FB] font-mono text-sm uppercase tracking-widest transition-all duration-200 hover:bg-[#7C3AED] hover:shadow-[0_0_18px_rgba(124,58,237,0.55)] active:scale-95"
       >
         &gt; INITIALIZE_DATA_ROOM
-      </button>
+      </a>
     </section>
   );
 }

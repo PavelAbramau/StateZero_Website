@@ -164,12 +164,9 @@ export default function CompanyPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {team.map((member) => (
-              <a
+              <div
                 key={member.initials}
-                href={member.cardHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block border border-[#334155] bg-[#06060F] rounded-xl overflow-hidden hover:border-[#22C55E]/60 hover:shadow-[0_0_16px_rgba(34,197,94,0.1)] transition-all duration-200 cursor-pointer"
+                className="border border-[#334155] bg-[#06060F] rounded-xl overflow-hidden hover:border-[#22C55E]/40 transition-colors duration-200"
               >
                 {/* Card header — terminal title bar */}
                 <div className="flex items-center justify-between gap-3 px-5 py-3 border-b border-[#334155] bg-[#0A0A14]">
@@ -181,7 +178,15 @@ export default function CompanyPage() {
                   <span className="font-mono text-[11px] text-[#334155]">
                     ~/.statezero/{member.handle}
                   </span>
-                  <span />
+                  <a
+                    href={member.cardHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-[10px] uppercase tracking-widest text-[#334155] hover:text-[#22C55E] transition-colors duration-150"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    View ↗
+                  </a>
                 </div>
 
                 {/* Card body */}
@@ -243,7 +248,7 @@ export default function CompanyPage() {
                     ))}
                   </div>
                 </div>
-              </a>
+              </div>
             ))}
           </div>
         </section>
