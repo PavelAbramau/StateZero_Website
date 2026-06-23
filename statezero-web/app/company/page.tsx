@@ -16,6 +16,7 @@ const team = [
     location: "Remote · EU",
     bio: "Architect of the StateZero computational engine. Designed the full latent-space transcriptomics pipeline — from scRNA-seq ingestion and LINCS perturbation screening to Virtual CRISPR simulation and the Transcriptomic-to-Fingerprint Encoder. Thin-client SSH architecture connecting a lightweight Mac to a 1 TB Ryzen execution core.",
     tags: ["Next.js", "Python", "Nextflow", "PyTorch", "scRNA-seq"],
+    cardHref: "https://www.linkedin.com/in/pavel-abramau/",
     links: [
       {
         label: "GitHub",
@@ -24,7 +25,7 @@ const team = [
       },
       {
         label: "LinkedIn",
-        href: "https://linkedin.com/in/pavelabramau",
+        href: "https://www.linkedin.com/in/pavel-abramau/",
         icon: "↗",
       },
     ],
@@ -37,7 +38,13 @@ const team = [
     location: "Gdańsk University of Technology",
     bio: "Full Professor of Biotechnology at GUT-PB. Specialist in molecular biology, genetic engineering, and regenerative tissue research. Provides scientific oversight on the biological framework — from T_pre disease-state profiling to fetal T_post target blueprint validation and wet-lab translation strategy.",
     tags: ["Molecular Biology", "Regenerative Medicine", "Genetic Engineering"],
+    cardHref: "https://www.researchgate.net/profile/Pawel-Sachadyn",
     links: [
+      {
+        label: "ResearchGate",
+        href: "https://www.researchgate.net/profile/Pawel-Sachadyn",
+        icon: "↗",
+      },
       {
         label: "Institution",
         href: "https://pg.edu.pl",
@@ -157,9 +164,12 @@ export default function CompanyPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {team.map((member) => (
-              <div
+              <a
                 key={member.initials}
-                className="border border-[#334155] bg-[#06060F] rounded-xl overflow-hidden hover:border-[#22C55E]/40 transition-colors duration-200"
+                href={member.cardHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block border border-[#334155] bg-[#06060F] rounded-xl overflow-hidden hover:border-[#22C55E]/60 hover:shadow-[0_0_16px_rgba(34,197,94,0.1)] transition-all duration-200 cursor-pointer"
               >
                 {/* Card header — terminal title bar */}
                 <div className="flex items-center justify-between gap-3 px-5 py-3 border-b border-[#334155] bg-[#0A0A14]">
@@ -233,7 +243,7 @@ export default function CompanyPage() {
                     ))}
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </section>

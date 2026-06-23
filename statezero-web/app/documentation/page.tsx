@@ -16,22 +16,22 @@ const sections = [
     cards: [
       {
         label: "Platform Architecture v2.1",
-        meta: "PDF · 3.4 MB · June 2026",
-        href: "#",
+        meta: "PDF · June 2026",
+        href: "/docs/StateZero_Platform_Documentation.pdf",
         icon: "▤",
         external: false,
       },
       {
         label: "SZ-01 Computational Validation Report",
-        meta: "PDF · 1.8 MB · June 2026",
-        href: "#",
+        meta: "HTML · June 2026",
+        href: "/docs/StateZero_Candidate_Report.html",
         icon: "▤",
         external: false,
       },
       {
         label: "LINCS L1000 Ligand Screening Methodology",
-        meta: "PDF · 2.1 MB · May 2026",
-        href: "#",
+        meta: "PDF · May 2026",
+        href: "/docs/StateZero_L1000_Methodology.pdf",
         icon: "▤",
         external: false,
       },
@@ -162,8 +162,9 @@ export default function DocumentationPage() {
                 <a
                   key={card.label}
                   href={card.href}
-                  target={card.external ? "_blank" : undefined}
+                  target={card.external || card.href.endsWith(".html") ? "_blank" : undefined}
                   rel={card.external ? "noopener noreferrer" : undefined}
+                  download={!card.external && card.href.endsWith(".pdf") ? true : undefined}
                   className="group flex flex-col gap-4 border border-[#334155] bg-[#06060F] p-6 rounded-xl transition-all duration-200 hover:border-[#22C55E] hover:shadow-[0_0_18px_rgba(34,197,94,0.12)]"
                 >
                   {/* Icon */}
