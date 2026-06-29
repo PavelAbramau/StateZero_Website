@@ -60,7 +60,7 @@ export default function Home() {
           {/* Primary CTA */}
           <a
             href="mailto:pavel@statezerolabs.space"
-            className="mt-12 inline-block px-10 py-4 border border-[#7C3AED] bg-transparent text-[#F4F4FB] font-mono text-sm uppercase tracking-widest transition-all duration-200 hover:bg-[#7C3AED] hover:shadow-[0_0_40px_8px_rgba(124,58,237,0.35),0_0_80px_20px_rgba(124,58,237,0.12)] active:scale-95"
+            className="mt-6 font-mono text-xs uppercase tracking-widest text-[#8D88B3] hover:text-[#22C55E] transition-colors duration-150 underline-offset-4 hover:underline"
           >
             &gt; INITIALIZE_DATA_ROOM
           </a>
