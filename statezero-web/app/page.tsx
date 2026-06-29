@@ -60,10 +60,9 @@ export default function Home() {
           {/* Primary CTA */}
           <a
             href="mailto:pavel@statezerolabs.space"
-            className="mt-12 inline-flex items-center gap-3 px-10 py-4 bg-[#05050A] border border-[#7C3AED] text-[#F4F4FB] font-mono text-sm uppercase tracking-widest transition-all duration-200 hover:bg-[#7C3AED]/10 hover:shadow-[0_0_40px_8px_rgba(124,58,237,0.35),0_0_80px_20px_rgba(124,58,237,0.12)] active:scale-95"
+            className="mt-12 inline-block px-10 py-4 border border-[#7C3AED] bg-transparent text-[#F4F4FB] font-mono text-sm uppercase tracking-widest transition-all duration-200 hover:bg-[#7C3AED] hover:shadow-[0_0_40px_8px_rgba(124,58,237,0.35),0_0_80px_20px_rgba(124,58,237,0.12)] active:scale-95"
           >
-            <span className="text-[#7C3AED]">◈</span>
-            Request Investor Data Room
+            &gt; INITIALIZE_DATA_ROOM
           </a>
 
           {/* Secondary link */}
