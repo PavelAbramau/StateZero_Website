@@ -64,12 +64,12 @@ export default function Header() {
           })}
 
           {/* CTA */}
-          <Link
-            href="/#cta"
+          <a
+            href="mailto:pavel@statezerolabs.space"
             className="ml-3 px-4 py-1.5 border border-[#7C3AED] font-mono text-[11px] uppercase tracking-widest text-[#F4F4FB] transition-all duration-200 hover:bg-[#7C3AED]/10 hover:shadow-[0_0_14px_rgba(124,58,237,0.3)]"
           >
             Data Room
-          </Link>
+          </a>
         </nav>
 
         {/* Mobile hamburger */}
@@ -104,13 +104,13 @@ export default function Header() {
               </Link>
             );
           })}
-          <Link
-            href="/#cta"
+          <a
+            href="mailto:pavel@statezerolabs.space"
             onClick={() => setOpen(false)}
             className="mt-3 px-4 py-2.5 border border-[#7C3AED] font-mono text-xs uppercase tracking-widest text-[#F4F4FB] text-center"
           >
             Data Room
-          </Link>
+          </a>
         </nav>
       )}
     </header>

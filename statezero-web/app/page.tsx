@@ -59,7 +59,7 @@ export default function Home() {
 
           {/* Primary CTA */}
           <a
-            href="mailto:investors@statezerolabs.space?subject=Data%20Room%20Access%20Request&body=Hi%20Pavel,%20I%20would%20like%20to%20request%20access%20to%20the%20StateZero%20investor%20data%20room."
+            href="mailto:pavel@statezerolabs.space"
             className="mt-12 inline-flex items-center gap-3 px-10 py-4 bg-[#05050A] border border-[#7C3AED] text-[#F4F4FB] font-mono text-sm uppercase tracking-widest transition-all duration-200 hover:bg-[#7C3AED]/10 hover:shadow-[0_0_40px_8px_rgba(124,58,237,0.35),0_0_80px_20px_rgba(124,58,237,0.12)] active:scale-95"
           >
             <span className="text-[#7C3AED]">◈</span>
@@ -68,7 +68,7 @@ export default function Home() {
 
           {/* Secondary link */}
           <a
-            href="mailto:investors@statezerolabs.space"
+            href="mailto:pavel@statezerolabs.space"
             className="mt-6 font-mono text-xs uppercase tracking-widest text-[#8D88B3] hover:text-[#22C55E] transition-colors duration-150 underline-offset-4 hover:underline"
           >
             → Initialize General Contact
