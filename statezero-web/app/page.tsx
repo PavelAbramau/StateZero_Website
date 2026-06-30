@@ -1,3 +1,4 @@
+"use client";
 import Hero from "../src/components/Hero";
 import Platform from "../src/components/Platform";
 import Pipeline from "../src/components/Pipeline";
