@@ -1,4 +1,3 @@
-"use client";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -184,7 +183,6 @@ export default function CompanyPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-mono text-[10px] uppercase tracking-widest text-[#334155] hover:text-[#22C55E] transition-colors duration-150"
-                    onClick={(e) => e.stopPropagation()}
                   >
                     View ↗
                   </a>
